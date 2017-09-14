@@ -1,0 +1,223 @@
+/* Table of contents
+  - General
+  - Classes
+
+ */
+
+/* general */
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+h1{
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 100%;
+  line-height: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+nav a:hover {
+  background-color: #005f5f;
+}
+
+nav a.active {
+  background-color: #fff;
+  color: #444;
+}
+
+@media screen and (min-width: 600px) {
+  nav li {
+    width: 10%;
+    line-height: 4vw;
+    font-size: 1.5vw;
+  }
+
+  /* Option 1 - Display Inline */
+  nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
+
+input{
+  outline-style: none;
+  height: 100%;
+  transition-timing-function: linear;
+}
+
+input:focus{
+  transition-duration: 1s;
+  outline-color: green;
+  outline-style: solid;
+  outline-width: thin;
+}
+
+/*
+Input is only for testing purposes. Do not know if it is better to use transition.
+*/
+/*
+input:focus{
+  animation-duration: 1s;
+  animation-name: highlight;
+  animation-fill-mode: forwards;
+  outline-color: green;
+  outline-style: solid;
+  outline-width: thin;
+
+}
+
+@keyframes highlight {
+  from {
+    outline-style: solid;
+    outline-width: thin;
+    outline-color: blue;
+
+  }
+
+  to {
+    outline-color: green;
+
+
+  }
+}
+*/
+
+.navigation
+{
+
+}
+
+img{
+  width: 30vw;
+}
+
+section{
+
+}
+
+section ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+section.cv img{
+  width: 7%;
+}
+
+footer{
+  text-align: center;
+}
+
+progress{
+  display:none;
+}
+
+/* show value */
+progress::after {
+   content: attr(value);
+ }
+
+
+/* classes */
+.content
+{
+
+    text-align: center;
+}
+
+.about-me, .description{
+  display: none;
+  transition-duration: 2s;
+
+}
+
+#frontpage:hover + .description{
+  display: block;
+  transition-timing-function: linear; /* only for testing purposes, which did not work*/
+}
+
+#about:hover + .about-me{
+  display: block;
+  transition-timing-function: linear; /* only for testing purposes, which did not work*/
+
+
+}
+
+/*show .description*/
+/*#frontpage:hover + .description{
+  animation-duration: 1s;
+  animation-name: popup;
+  animation-fill-mode: forwards;
+}
+
+#about:hover + .about-me{
+  animation-duration: 1s;
+  animation-name: popup;
+  animation-fill-mode: forwards;
+}
+
+@keyframes popup{
+  from {
+    display: onen;
+  }
+
+  to {
+    display: block;
+
+  }
+}*/
+
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+
+}
+
+.flex-item
+{
+
+}
+
+
+#icons > li > img:hover{
+  /*Interesting it makes a circle around them...*/
+  border-style: groove;
+  border-radius: 100px;
+  border-color: lightgreen;
+}
+
+#icons > li > img{
+  transition-duration: 2s;
+}
+#icons > li > img:hover + progress{
+  display: inline;
+  position: absolute;
+  /* make the progress centered to the image*/
+  margin-left: 1%;
+  margin-top: 1%;
+
+  transition-timing-function: linear;
+}
