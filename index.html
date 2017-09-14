@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <!--
 TODO:
 - Make a autocomplete search. So it filters content (for sections) automatically from the page.
@@ -6,7 +6,7 @@ TODO:
 -->
 <html>
     <head>
-        <title>Assignment1 - Split CV page</title>
+        <title>Assignment1 - filter CV</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/main.css" rel="stylesheet" type="text/css"/>
@@ -14,24 +14,24 @@ TODO:
     </head>
     <body>
       <div class="container">
-        <h1>Velkommen til min portfolio side</h1>
+        <h1>Welcome to my portfolio website</h1>
         <nav class="navigation flex-item">
             <ul>
-                <li><a href="#Frontpage">Forside</a></li>
-                <li><a href="#About">Om mig</a></li>
+                <li><a href="#Frontpage">Frontpage</a></li>
+                <li><a href="#About">About me</a></li>
                 <li><a href="#CV">CV</a></li>
                 <li><a href="#Portfolio">Portfolio</a></li>
-                <li><a href="#Contact">Kontakt</a></li>
+                <li><a href="#Contact">Contact</a></li>
                 <li><input type="search" placeholder="Hvad søger du efter?"/></li>
             </ul>
         </nav>
         <div class="content flex-item">
             <!-- Content -->
             <section class="frontpage">
-              <h2>Velkommen til min hjem</h2>
-              <p>På den her hjemmeside vil du finde ud hvem jeg er og hvad jeg laver.</p>
-              <p>Så lad mig spørge hvad søger du efter?</p>
-              <img id="frontpage" alt="billede af mig" src="img/jpopmig.jpg">
+              <h2>Welcome to my website</h2>
+              <p>On this website you will find about what I am making.</p>
+              <p>So let me hear. What are you searching for?</p>
+              <img class="hover" id="frontpage" alt="billede af mig" src="img/jpopmig.jpg">
               <p class="description">
                 <strong>Description</strong><br>
                 My name is Hamun. Since I was a child I had a big passion for learning. I love school, but life made me realize that you can not only work hard to achive something. You have to adapt yourself to everything. That is why I wanted to focus on many aspects of programming. Both front-end and back-end. I learned HTML and CSS at the age of 12. I moved on to learn .Net and ASP.NET in C#. As a hobby I made youtube videoes since 2007. I made tutorials, guides, vlogs, etc. I wanted to help people with my knowledge, and hopefully be better in learning on the way. I also made Anime Music Videoes (AMV), where I combine Japanense Cartoons with music. Since then I moved on to my new channel where I make danish videoes, with the purpose of helping other people with anything I know.
@@ -39,8 +39,8 @@ TODO:
             </section>
             <hr>
             <section class="about">
-              <h2>Om mig</h2>
-              <img id="about" alt="billede af mig" src="img/mig.jpg">
+              <h2>About me</h2>
+              <img class="hover" id="about" alt="billede af mig" src="img/mig.jpg">
               <!-- Something you do not learn in school.
                    For some reason h3 tags are automatically ending (breaking) the p tag... WHY?!?!?
               -->
@@ -55,23 +55,23 @@ TODO:
             </section>
             <hr>
             <section class="cv">
-              <h2>Mit CV</h2>
-              <p>De ting jeg er god til er følgende</p>
+              <h2>My CV</h2>
+              <p>The languages and frameworks I am working on are the following (hover over them):</p>
               <ul id="icons">
                 <li>
-                  <img src="img\icons\c-img.png" alt="css">
+                  <img src="img/icons/c-img.png" alt="css">
                   <progress title="CSS" max="100" value="50">CSS</progress>
                 </li>
                 <li>
-                  <img src="img\icons\if_10-html5_104494.png" alt="html5">
+                  <img src="img/icons/if_10-html5_104494.png" alt="html5">
                   <progress max="100" value="100">HTML</progress>
                 </li>
                 <li>
-                  <img src="img\icons\if_js_282802.png" alt="javascript">
+                  <img src="img/icons/if_js_282802.png" alt="javascript">
                   <progress max="100" value="100">Javascript</progress>
                 </li>
                 <li>
-                  <img src="img\icons\if_icon_287_226925.png" alt="csharp">
+                  <img src="img/icons/if_icon_287_226925.png" alt="csharp">
                   <progress max="100" value="80">C#</progress>
                 </li>
                 <li>

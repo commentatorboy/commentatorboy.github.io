@@ -2,6 +2,8 @@
   - General
   - Classes
 
+todo:
+use fig caption and figure
  */
 
 /* general */
@@ -150,12 +152,12 @@ progress::after {
 
 }
 
-#frontpage:hover + .description{
+.hover:hover + .description{
   display: block;
   transition-timing-function: linear; /* only for testing purposes, which did not work*/
 }
 
-#about:hover + .about-me{
+.hover:hover + .about-me{
   display: block;
   transition-timing-function: linear; /* only for testing purposes, which did not work*/
 
